@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Kalkulator Ciśnienia</title>
+        <link href="style.css" rel='stylesheet' type='text/css'>
+        <link href='altitude.css' rel='stylesheet' type='text/css'>
+        <link href='images/barometer.png' rel='icon' type='image/x-icon'>
+        <link href='http://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id='div-header'>
+            <h1 id='title'>Kalkulator barometryczny</h1>
+            <h2 id='subtitle'>od PANT Studios</h2>
+            <!--<h2 id='subtitle'>22.07.2021</h2>-->
+        </div>
+        <div id='div-mainContent'>
+            <h3>Kalkulator wysokości nad poziomem morza</h3>
+            <h4>Wymagane dane: <i>ciśnienie atmosferyczne</i>, <i>ciśnienie bezwzględne</i></h4><br><br>
+            <div id='form'>
+                <label for='atm' class='label'>Ciśnienie atmosferyczne:</label>
+                <input type='text' class='input' name='atm' id='atm'><br><br>
+                <label for='abs' class='label'>Ciśnienie bezwzględne (hPa): </label>
+                <input type='text' class='input' name='abs' id='abs' placeholder='Domyślnie: 1013.25'>
+            </div><br><br>
+            <div class='div-button'><button class='modeButton' onclick="main()">Sprawdź</button></div><br>
+            <h3>Wyniki</h3>
+            <h4 id='result'>Wysokość: ~ m n.p.m</h4>
+        </div><br>
+        <script src='altitude.js'></script>
+    </body>
+</html>
