@@ -9,10 +9,8 @@
     </head>
     <body>
         <div id='div-header'>
-            <h1 id='title'>Kalkulator barometryczny</h1>
-            <h2 id='subtitle'>od PANT Studios</h2>
-            <!--<h2 id='subtitle'>22.07.2021</h2>-->
-        </div>
+            <br><br><h1 id='title'>Kalkulator barometryczny</h1>
+        </div><br><br>
         <div id='div-mainContent'>
             <h3>Kalkulator ciśnienia atmosferycznego</h3>
             <h4>Wymagane dane: <i>wysokość w m.n.p.m.</i>, <i>ciśnienie bezwzględne</i></h4><br><br>
@@ -20,11 +18,14 @@
                 <label for='altitude' class='label'>Wysokość (w m n.p.m):</label>
                 <input type='text' class='input' name='altitude' id='altitude'><br><br>
                 <label for='abs' class='label'>Ciśnienie bezwzględne (hPa): </label>
-                <input type='text' class='input' name='abs' id='abs' placeholder='Domyślnie: 1013.25'>
+                <input type='text' class='input' name='abs' id='abs' placeholder='Domyślnie: 1013.25'><br><br>
+                <label for='atm' class='label'>Ciśnienie atmosferyczne:</label>
+                <input type='text' class='input' name='atm' id='atm' placeholder='Autouzupełnianie' disabled>
             </div><br><br>
-            <div class='div-button'><button class='modeButton' onclick="main()">Sprawdź</button></div><br>
+            <!--<div class='div-button'><button class='modeButton' onclick="main()">Sprawdź</button></div><br>
             <h3>Wyniki</h3>
-            <h4 id='result'>Ciśnienie na wysokości ~ m n.p.m: ~ hPa</h4>
+            <h4 id='result'>Ciśnienie na wysokości ~ m n.p.m: ~ hPa</h4>-->
+            <div class='div-button'><a href='index.html' class='modeButton'>Wróć do strony głównej</a></div>
         </div><br>
         <script src='pressure.js'></script>
     </body>

@@ -13,9 +13,10 @@
 
 .input {
     font-family: 'Open Sans', monospace;
-	background-color:#3f3f3f;
+	background-color: transparent;
 	-webkit-border-radius:28px;
 	-moz-border-radius:28px;
+	border: 1px solid gray;
 	border-radius:28px;
 	display:inline-block;
 	color:#e6e6e6;
