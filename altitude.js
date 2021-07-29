@@ -1,5 +1,9 @@
 function cAltitude(pressure, absolutePressure) {
-    return 0.000125 * Math.log(pressure / absolutePressure)
+    const StalaGazowa = 8.3145 // J/mol*K
+    const MasaMolowa = 0.0289644 // kg / mol
+    const PrzyspieszenieZiemskie = 9.80665 // m / s2
+    const Temperatura = 20
+    return -((StalaGazowa * Temperatura) / (PrzyspieszenieZiemskie * MasaMolowa)) * Math.log(pressure / absolutePressure)
 }
 
 function main() {
